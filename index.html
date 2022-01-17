@@ -283,6 +283,19 @@
    <footer>
 
          <div id="go-top" style="display: block;"><a class="smoothscroll" title="返回顶部" href="#home"><i class="icon-up-open"></i></a></div>
+	                           <!-- Comments -->
+                            <div id="gitalk-container"></div>
+			     <script type="text/javascript">
+                             var gitalk = new Gitalk({
+                             clientID: `3932601e0a7bc4819f52`, //上面获取到的值
+                             clientSecret: `68103177c6cd14cbe7bcbcebaa9d74609805baed`,//上面获取到的值
+                             repo: `m1chaeLJo.github.io`, //您刚才建立仓库的名字
+                             owner: 'm1chaeLJo', //你的GitHub用户名字
+                             admin: ['m1chaeLJo'], //你的GitHub用户的名字
+                             id: 'first', //,每个页面的ID不能一样如果重复就会把其他页面的评论引进来,每个页面的ID不能一样
+                             });
+                             gitalk.render('gitalk-container');
+                             </script> 
          <p>-m1chaeL- 2022</p>
 
    </footer> 
