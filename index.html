@@ -1,162 +1,321 @@
 <!DOCTYPE html>
-<html lang="zh">
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="zh"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="zh"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="zh"> <!--<![endif]-->
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>m1chaeL 博客</title>
-	<link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
-	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/templatemo-xtra-blog.css" rel="stylesheet">
-<!--
-    
-TemplateMo 553 Xtra Blog
-
-https://templatemo.com/tm-553-xtra-blog
-
--->
+   <meta charset="utf-8">
+	<title>-m1chaeL-的博客</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+                <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+                <link rel="stylesheet" href="css/media-queries.css">
+                <link rel="stylesheet" href="css/magnific-popup.css">
+	<script src="js/modernizr.js"></script>
+	<link rel="shortcut icon" href="favicon.ico" >
+                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 </head>
+
 <body>
-	<header class="tm-header" id="tm-header">
-        <div class="tm-header-wrapper">
-            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="tm-site-header">
-                <div class="mb-3 mx-auto tm-site-logo"><i class="fas fa-times fa-2x"></i></div>            
-                <h1 class="text-center">m1caheL的博客</h1>
-            </div>
-            <nav class="tm-nav" id="tm-nav">            
-                <ul>
-                    <li class="tm-nav-item active"><a href="index.html" class="tm-nav-link">
-                        <i class="fas fa-home"></i>
-                        主页
-                    </a></li>
-                    <li class="tm-nav-item"><a href="about.html" class="tm-nav-link">
-                        <i class="fas fa-users"></i>
-                        关于
-                    </a></li>
-                    <li class="tm-nav-item"><a href="contact.html" class="tm-nav-link">
-                        <i class="far fa-comments"></i>
-                        联系
-                    </a></li>
-                </ul>
-            </nav>
-            <div class="tm-mb-65">
-                <a rel="nofollow" href="https://fb.com/templatemo" class="tm-social-link">
-                    <i class="fab fa-facebook tm-social-icon"></i>
-                </a>
-                <a href="https://twitter.com" class="tm-social-link">
-                    <i class="fab fa-twitter tm-social-icon"></i>
-                </a>
-                <a href="https://instagram.com" class="tm-social-link">
-                    <i class="fab fa-instagram tm-social-icon"></i>
-                </a>
-                <a href="https://linkedin.com" class="tm-social-link">
-                    <i class="fab fa-linkedin tm-social-icon"></i>
-                </a>
-            </div>
-            <p class="tm-mb-80 pr-5 text-white">
-                这边是一段话
+   <header id="home">
+
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">主页</a></li>
+	         <li><a class="smoothscroll" href="#about">关于我</a></li>
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">我是m1chaeL。</h1>
+            <h3>我是m1caheL <span>一个14岁b站up主(<a rel="nofollow" target="_parent" href="https://space.bilibili.com/560117518" class="tm-external-link">-m1chaeL-</a>)</span>，制作一些有趣而又有真材实料的视频，还自学开发过两个游戏，请 <a class="smoothscroll" href="#about">往下滑</a>
+            以更加<a class="smoothscroll" href="#about">了解我吧！</a>.</h3>
+            <hr />
+            <ul class="social">
+
+            </ul>
+         </div>
+      </div>
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#styles"><i class="icon-down-circle"></i></a>
+      </p>
+
+   </header> <!-- Header End -->
+
+   <!-- Style Guide Section
+   ================================================== -->
+   <section id="about" style="padding: 90px 0 72px; background: #fff;">
+
+      <div class="row add-bottom">
+
+         <div class="twelve columns">
+
+            <h1>关于我</h1>
+
+            <p class="lead add-bottom">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+            deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.
             </p>
-        </div>
-    </header>
-    <div class="container-fluid">
-        <main class="tm-main">
-            <!-- Search form -->
-            <div class="row tm-row">
-                <div class="col-12">
-                    <form method="GET" class="form-inline tm-mb-80 tm-search-form">                
-                        <input class="form-control tm-search-input" name="query" type="text" placeholder="搜索..." aria-label="搜索">
-                        <button class="tm-search-button" type="submit">
-                            <i class="fas fa-search tm-search-icon" aria-hidden="true"></i>
-                        </button>                                
-                    </form>
-                </div>                
-            </div>            
-            <div class="row tm-row">
-                <article class="col-12 col-md-6 tm-post">
-                    <hr class="tm-hr-primary">
-                    <a href="post.html" class="effect-lily tm-post-link tm-pt-60">
-                        <div class="tm-post-link-inner">
-                            <img src="img/img-01.jpg" alt="Image" class="img-fluid">                            
-                        </div>
-                        <span class="position-absolute tm-new-badge">置顶</span>
-                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">标题</h2>
-                    </a>                    
-                    <p class="tm-pt-30">
-                        简介
-                    </p>
-                    <div class="d-flex justify-content-between tm-pt-45">
-                        <span class="tm-color-primary">标签</span>
-                        <span class="tm-color-primary">日期</span>
-                    </div>
-                    <hr>
-                    <div class="d-flex justify-content-between">
-                        <span>评论数</span>
-                        <span>作者</span>
-                    </div>
-                </article>
-		<article class="col-12 col-md-6 tm-post">
-                    <hr class="tm-hr-primary">
-                    <a href="post.html" class="effect-lily tm-post-link tm-pt-60">
-                        <div class="tm-post-link-inner">
-                            <img src="img/img-01.jpg" alt="Image" class="img-fluid">                            
-                        </div>
-                        <span class="position-absolute tm-new-badge">置顶</span>
-                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">标题</h2>
-                    </a>                    
-                    <p class="tm-pt-30">
-                        简介
-                    </p>
-                    <div class="d-flex justify-content-between tm-pt-45">
-                        <span class="tm-color-primary">标签</span>
-                        <span class="tm-color-primary">日期</span>
-                    </div>
-                    <hr>
-                    <div class="d-flex justify-content-between">
-                        <span>评论数</span>
-                        <span>作者</span>
-                    </div>
-                </article>
-            </div>
-            <div class="row tm-row tm-mt-100 tm-mb-75">
-                <div class="tm-prev-next-wrapper">
-                    <a href="#" class="mb-2 tm-btn tm-btn-primary tm-prev-next disabled tm-mr-20">上一页</a>
-                    <a href="#" class="mb-2 tm-btn tm-btn-primary tm-prev-next">下一页</a>
-                </div>
-                <div class="tm-paging-wrapper">
-                    <span class="d-inline-block mr-3">页</span>
-                    <nav class="tm-paging-nav d-inline-block">
-                        <ul>
-                            <li class="tm-paging-item active">
-                                <a href="#" class="mb-2 tm-btn tm-paging-link">1</a>
-                            </li>
-                            <li class="tm-paging-item">
-                                <a href="#" class="mb-2 tm-btn tm-paging-link">2</a>
-                            </li>
-                            <li class="tm-paging-item">
-                                <a href="#" class="mb-2 tm-btn tm-paging-link">3</a>
-                            </li>
-                            <li class="tm-paging-item">
-                                <a href="#" class="mb-2 tm-btn tm-paging-link">4</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>                
-            </div>            
-            <footer class="row tm-row">
-                <hr class="col-12">
-                <div class="col-md-6 col-12 tm-color-gray">
-                    <a rel="nofollow" target="_parent" href="https://space.bilibili.com/560117518" class="tm-external-link">B站</a>
-                </div>
-                <div class="col-md-6 col-12 tm-color-gray tm-copyright">
-                    2022 m1chaeL
-                </div>
-            </footer>
-        </main>
-    </div>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/templatemo-script.js"></script>
+
+            <hr>
+
+         </div>
+
+      </div> <!-- Row End-->
+
+      <div class="row add-bottom">
+
+         <div class="six columns add-bottom">
+
+            <h3>Paragraph and Image</h3>
+
+            <p><a href="#"><img width="120" height="120" class="pull-left" alt="sample-image" src="images/sample-image.jpg"></a>
+  			   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum.
+  			   Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu
+  			   posuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum, dui pede condimentum
+  			   odio, ac blandit ante orci ut diam. Cras fringilla magna. Phasellus suscipit, leo a pharetra
+  			   condimentum, lorem tellus eleifend magna, eget fringilla velit magna id neque.
+  			   posuere nunc justo tempus leo. </p>
+
+            <p>A <a href="#">link</a>,
+  			   <abbr title="this really isn't a very good description">abbrebation</abbr>,
+  			   <strong>strong text</strong>,
+            <em>em text</em>,
+  			   <del>deleted text</del>, and
+            <mark>this is a mark text.</mark>
+          	</p>
+
+         </div>
+
+         <div class="six columns add-bottom">
+
+            <h3>Drop Caps</h3>
+
+            <p class="drop-cap">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+            there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the
+            Semantics, a large language ocean. A small river named Duden flows by their place and supplies
+            it with the necessary regelialia. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu
+  			   posuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum, dui pede condimentum
+  			   odio, ac blandit ante orci ut diam. Cras fringilla magna. Phasellus suscipit, leo a pharetra
+  			   condimentum, lorem tellus eleifend magna, eget fringilla velit magna id neque.
+  			   </p>
+
+            <h3>Small Print</h3>
+
+            <p>Buy one widget, get one free!
+  				<small>(While supplies last. Offer expires on the vernal equinox. Not valid in Ohio.)</small>
+  			   </p>
+
+         </div>
+
+         <hr />
+
+      </div> <!-- Row End-->
+
+      <div class="row add-bottom">
+
+         <div class="six columns add-bottom">
+
+            <h3>Pull Quotes</h3>
+
+            <aside class="pull-quote">
+    			   <blockquote>
+    				   <p>It is a paradisematic country, in which roasted parts of
+                  sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind
+                  texts it is an almost unorthographic life One day however a small line of blind text by the name
+                  of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+    				</blockquote>
+    			</aside>
+
+         </div>
+
+         <div class="six columns add-bottom">
+
+            <h3>Block Quotes</h3>
+
+            <blockquote cite="http://where-i-got-my-info-from.com">
+   			   <p>Your work is going to fill a large part of your life, and the only way to be truly satisfied is
+               to do what you believe is great work. And the only way to do great work is to love what you do.
+               If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it.
+               </p>
+   				<cite>
+   				   <a href="#">Steve Jobs</a>
+   				</cite>
+			   </blockquote>
+
+            <blockquote>
+               <p>Good design is as little design as possible.</p>
+               <cite>Dieter Rams</cite>
+            </blockquote>
+
+         </div>
+
+         <hr />
+
+      </div> <!-- Row End-->
+
+      <div class="row add-bottom">
+
+         <div class="eight columns add-bottom">
+
+            <h3 class="add-bottom">Definition Lists</h3>
+
+            <h5>a) Multi-line Definitions (default)</h5>
+
+            <dl>
+			      <dt><b>This is a term</b></dt>
+				      <dd>this is the definition of that term, which both live in a <code>dl</code>.</dd>
+			      <dt><b>Another Term</b></dt>
+				      <dd>And it gets a definition too, which is this line</dd>
+				      <dd>This is a 2<sup>nd</sup> definition for a single term. A <code>dt</code> may be followed by multiple <code>dd</code>s.</dd>
+		      </dl>
+
+            <h5>b) Inline Definitions</h5>
+
+            <dl class="lining">
+			      <dt><b>This is a term</b></dt>
+				      <dd>this is the definition of that term, which both live in a <code>dl</code>.</dd>
+			      <dt><b>Another Term</b></dt>
+				      <dd class="micro">And it gets a definition too, which is this line</dd>
+				      <dd class="micro"> this is a 2<sup>nd</sup> definition for a single term.</dd>
+			      <dt><b>Term</b></dt>
+			      <dt><b>Other Defined Term</b></dt>
+				      <dd><code>dt</code> terms may stand on their own without an accompanying <code>dd</code>, but in that case they <em>share</em> descriptions with the next available <code>dt</code>. You may not have a <code>dd</code> without a parent <code>dt</code>.</dd>
+		      </dl>
+
+            <h5>c) Dictionary-style Definition</h5>
+
+            <dl class="dictionary-style">
+				   <dt><b>This is a term</b></dt>
+					   <dd>this is the definition of that term, which both live in a <code>dl</code>.</dd>
+					<dt><b>Another Term</b></dt>
+					   <dd>And it gets a definition too, which is this line</dd>
+					   <dd> this is a 2<sup>nd</sup> definition for a single term.</dd>
+					<dt><b>Term</b></dt>
+					<dt><b>Other Defined Term</b></dt>
+					   <dd><code>dt</code> terms may stand on their own without an accompanying <code>dd</code>, but in that case they <em>share</em> descriptions with the next available <code>dt</code>. You may not have a <code>dd</code> without a parent <code>dt</code>.</dd>
+				</dl>
+
+         </div>
+
+         <div class="four columns add-bottom">
+
+            <h3>Example Lists</h3>
+
+            <ol>
+				   <li>Here is an example</li>
+				   <li>of an ordered list</li>
+			   </ol>
+
+            <ul class="disc">
+				   <li>Here is an example</li>
+				   <li>of an unordered list</li>
+			   </ul>
+
+            <h3>Stats Tabs</h3>
+
+            <ul class="stats-tabs">
+			      <li><a href="#">1,234 <b>Sasuke</b></a></li>
+			      <li><a href="#">567 <b>Hinata</b></a></li>
+			      <li><a href="#">23,456 <b>Naruto</b></a></li>
+			      <li><a href="#">3,456 <b>Kiba</b></a></li>
+			      <li><a href="#">456 <b>Shikamaru</b></a></li>
+			      <li><a href="#">26 <b>Sakura</b></a></li>
+		      </ul>
+
+            <h3>Headers</h3>
+
+            <h1>H1 Heading</h1>
+            <h2>H2 Heading</h2>
+            <h3>H3 Heading</h3>
+            <h4>H4 Heading</h4>
+            <h5>H5 Heading</h5>
+            <h6>H6 Heading</h6>
+
+            <hr>
+
+            <h3>button</h3>
+
+            <a class="button" href="#">This is a button</a>
+
+         </div>
+
+         <hr />
+
+      </div> <!-- Row End-->
+
+      <div class="row add-bottom">
+
+         <div class="twelve columns add-bottom">
+
+            <nav class="pagination add-bottom">
+
+               <span class="page-numbers prev inactive">上一页</span>
+   	         <span class="page-numbers current">1</span>
+   	         <a href="#" class="page-numbers">2</a>
+               <a href="#" class="page-numbers">3</a>
+               <a href="#" class="page-numbers">4</a>
+               <a href="#" class="page-numbers">5</a>
+               <a href="#" class="page-numbers">6</a>
+               <a href="#" class="page-numbers">7</a>
+               <a href="#" class="page-numbers">8</a>
+               <a href="#" class="page-numbers">9</a>
+   	         <a href="#" class="page-numbers next">下一页</a>
+		      </nav>
+         </div>
+         <hr />
+          <div id="gitalk-container"></div>     
+          <script type="text/javascript">
+           var gitalk = new Gitalk({
+            // gitalk的主要参数
+           clientID: `3932601e0a7bc4819f52`,   //上面获取到的值
+           clientSecret: `68103177c6cd14cbe7bcbcebaa9d74609805baed`,//上面获取到的值
+           repo: `m1chaeLJo.github.io`,  //您刚才建立仓库的名字
+           owner: 'm1chaeLJo',   //你的GitHub用户名字
+           admin: [m1chaeLJo'],  //你的GitHub用户的名字
+           id: 'index', //id不能重复，如果重复就会把其他页面的评论引进来
+           });
+           gitalk.render('gitalk-container');
+          </script> 
+      </div> 
+
+
+ 
+   </section> <!-- Resume Section End-->
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+         <div id="go-top" style="display: block;"><a class="smoothscroll" title="返回顶部" href="#home"><i class="icon-up-open"></i></a></div>
+         <p>-m1chaeL- 2022</p>
+
+   </footer> 
+
+   <!-- Java Script
+   ================================================== -->
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+   <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/doubletaptogo.js"></script>
+   <script src="js/spin.js"></script>
+
+   <script src="js/init.js"></script>
+
 </body>
+
 </html>
