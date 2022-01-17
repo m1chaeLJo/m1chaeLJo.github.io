@@ -29,6 +29,15 @@
          <ul id="nav" class="nav">
             <li class="current"><a class="smoothscroll" href="#home">主页</a></li>
 	         <li><a class="smoothscroll" href="#about">关于我</a></li>
+		 <li><a class="smoothscroll" href="#"><script>
+    function mytime(){
+        var a = new Date();
+        var b = a.toLocaleTimeString();
+        var c = a.toLocaleDateString();
+        document.getElementById("time").innerHTML = c+"&nbsp"+b;
+        }
+    setInterval(function() {mytime()},1000);
+</script></a></li>
          </ul> <!-- end #nav -->
 
       </nav> <!-- end #nav-wrap -->
@@ -274,16 +283,8 @@
          </div>
          <hr />
       </div> 
-
-   </section> <!-- Resume Section End--
-
-
-   <!-- footer
-   ================================================== -->
-   <footer>
-
-         <div id="go-top" style="display: block;"><a class="smoothscroll" title="返回顶部" href="#home"><i class="icon-up-open"></i></a></div>
-	                           <!-- Comments -->
+	   	           <!-- Comments -->
+	             <div class="text" style=" text-align:center;">
                             <div id="gitalk-container"></div>
 			     <script type="text/javascript">
                              var gitalk = new Gitalk({
@@ -296,6 +297,15 @@
                              });
                              gitalk.render('gitalk-container');
                              </script> 
+
+   </section> <!-- Resume Section End--
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+         <div id="go-top" style="display: block;"><a class="smoothscroll" title="返回顶部" href="#home"><i class="icon-up-open"></i></a></div>
          <p>-m1chaeL- 2022</p>
 
    </footer> 
