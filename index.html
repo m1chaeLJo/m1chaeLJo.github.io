@@ -29,7 +29,7 @@
          <ul id="nav" class="nav">
             <li class="current"><a class="smoothscroll" href="#home">主页</a></li>
 	         <li><a class="smoothscroll" href="#about">关于我</a></li>
-		 <li><a class="smoothscroll" href="#"><script>
+		 <li><a class="smoothscroll" href="#"><script><span id="time"></span>
     function mytime(){
         var a = new Date();
         var b = a.toLocaleTimeString();
@@ -283,8 +283,7 @@
          </div>
          <hr />
       </div> 
-	   	           <!-- Comments -->
-	             <div class="text" style=" text-align:center;">
+	   	   	           <!-- Comments -->
                             <div id="gitalk-container"></div>
 			     <script type="text/javascript">
                              var gitalk = new Gitalk({
@@ -297,6 +296,7 @@
                              });
                              gitalk.render('gitalk-container');
                              </script> 
+
 
    </section> <!-- Resume Section End--
 
