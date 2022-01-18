@@ -17,7 +17,50 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
   <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 </head>
+<script type="text/javascript">jQuery(function () {
+        $("html").click(function (e) {
+            var a_idx = Math.floor((Math.random() * 26));
+            var a = new Array(
+                "乐观", "❤", "积极", "向上", "自由", "正能量", "(*^▽^*)", "元气满满", "开心", "快乐",
+                "善良", "可爱", "暴富", "暴瘦", "❤", "富强", "民主", "文明", "和谐", "自由", "平等",
+                "公正", "法治", "爱国", "敬业", "诚信", "友善"
 
+
+
+            );
+            var color1 = Math.floor((Math.random() * 255));
+            var color2 = Math.floor((Math.random() * 255));
+            var color3 = Math.floor((Math.random() * 255));
+
+            var $i = $("<span />").text(a[a_idx]);
+            a_idx = (a_idx + 1) % a.length;
+            var x = e.pageX,
+                y = e.pageY;
+            $i.css({
+                "z-index": 9999999999999,
+                "top": y - 20,
+                "left": x,
+                "position": "absolute",
+                "font-family": "mmm",
+                "fontSize": Math.floor((Math.random() * 22) + 15),
+                "font-weight": "bold",
+                "color": "rgb(" + color1 + "," + color2 + "," + color3 + ")",
+                "-webkit-user-select": "none",
+                "-moz-user-select": "none",
+                "-ms-user-select": "none",
+                "user-select": "none",
+            });
+            $("body").append($i);
+            $i.animate({
+                "top": y - 200,
+                "opacity": 0
+            },
+                1000,
+                function () {
+                    $i.remove();
+                });
+        });
+    });</script>
 <body>
    <header id="home">
 
@@ -81,8 +124,11 @@
               <iframe frameborder="0" src="https://itch.io/embed/654942?border_width=0&amp;border_color=ffffff" width="501" height="165"><a href="https://jy-jy-johnny.itch.io/vehicle-god-forever">Vehicle God forever by JY_JY_</a></iframe>                  <!--<a href="#"><img width="120" height="120" class="pull-left" alt="sample-image" src="images/sample-image.jpg"></a>-->
                   我在初一制作过一个赛车游戏，没错，我第一个用unity制作的游戏，比较粗糙，但花费了我不少时间。其中蕴含了不少bug，修复不了，于是就停止制作了...
               </p>
-              <iframe frameborder="0" src="https://itch.io/embed/1256275?border_color=ffffff" width="501" height="167"><a href="https://jy-jy-johnny.itch.io/jy-jy-fps">JY_JY_FPS by JY_JY_</a></iframe>              <p>
-                  A <a href="#">link</a>,
+              <iframe frameborder="0" src="https://itch.io/embed/1256275?border_color=ffffff" width="501" height="167"><a href="https://jy-jy-johnny.itch.io/jy-jy-fps">JY_JY_FPS by JY_JY_</a></iframe>
+              
+              <p>
+
+              A <a href="#">link</a>,
                   <abbr title="this really isn't a very good description">abbrebation</abbr>,
                   <strong>strong text</strong>,
                   <em>em text</em>,
