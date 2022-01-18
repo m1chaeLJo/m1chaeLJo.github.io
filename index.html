@@ -17,50 +17,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
   <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 </head>
-<script type="text/javascript">jQuery(function () {
-        $("html").click(function (e) {
-            var a_idx = Math.floor((Math.random() * 26));
-            var a = new Array(
-                "乐观", "❤", "积极", "向上", "自由", "正能量", "(*^▽^*)", "元气满满", "开心", "快乐",
-                "善良", "可爱", "暴富", "暴瘦", "❤", "富强", "民主", "文明", "和谐", "自由", "平等",
-                "公正", "法治", "爱国", "敬业", "诚信", "友善"
 
-
-
-            );
-            var color1 = Math.floor((Math.random() * 255));
-            var color2 = Math.floor((Math.random() * 255));
-            var color3 = Math.floor((Math.random() * 255));
-
-            var $i = $("<span />").text(a[a_idx]);
-            a_idx = (a_idx + 1) % a.length;
-            var x = e.pageX,
-                y = e.pageY;
-            $i.css({
-                "z-index": 9999999999999,
-                "top": y - 20,
-                "left": x,
-                "position": "absolute",
-                "font-family": "mmm",
-                "fontSize": Math.floor((Math.random() * 22) + 15),
-                "font-weight": "bold",
-                "color": "rgb(" + color1 + "," + color2 + "," + color3 + ")",
-                "-webkit-user-select": "none",
-                "-moz-user-select": "none",
-                "-ms-user-select": "none",
-                "user-select": "none",
-            });
-            $("body").append($i);
-            $i.animate({
-                "top": y - 200,
-                "opacity": 0
-            },
-                1000,
-                function () {
-                    $i.remove();
-                });
-        });
-    });</script>
 <body>
    <header id="home">
 
@@ -107,11 +64,9 @@
               <p class="lead add-bottom">
                   没错，爱编程、做视频，以及社死。。。
               </p>
-              <div class="text" style=" text-align:center;">
               <iframe src="//player.bilibili.com/player.html?aid=632907864&bvid=BV1Kb4y127QU&cid=406918545&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
               <iframe src="//player.bilibili.com/player.html?aid=503715733&bvid=BV1Rg411g7Tn&cid=359438702&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
               <iframe src="//player.bilibili.com/player.html?aid=506609594&bvid=BV1Rg411K7gx&cid=438318019&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-	      </div> 
               <hr>
 
           </div>
