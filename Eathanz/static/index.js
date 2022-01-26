@@ -343,7 +343,7 @@ function shareText(score) {
     SubmitResults();
     if (score <= 59) return '瀚泽表示不屑';
     if (score <= 119) return '就这？';
-    if (score <= 159) return '瀚泽表示还行';
+    if (score <= 199) return '瀚泽表示还行';
     if (score <= 250) return '您就是瀚泽是吧？';
     return '？瀚泽奶奶都吓哭了';
 }
