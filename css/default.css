@@ -295,10 +295,16 @@ a, a:visited {
    -o-transition: color .3s ease-in-out;
    transition: color .3s ease-in-out;
 }
-a:hover, a:focus { color: #313131; }
 p a, p a:visited { line-height: inherit; }
 
+a {
+	color: #00F
+}
 
+	a:hover {
+		color: #F00
+	}
+/* 鼠标经过悬停字体颜色 */ 
 /*  4. List  --------------------------------------------------------- */
 
 ul, ol { margin-bottom: 24px; margin-top: 12px; }
