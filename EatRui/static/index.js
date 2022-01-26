@@ -119,7 +119,7 @@ function gameInit() {
 function gameRestart() {
     _gameBBList = [];
     _gameBBListIndex = 0;
-    _gameScore = 0;
+    _gameScore = 50;
     _gameOver = false;
     _gameStart = false;
     _gameTimeNum = 30;
