@@ -56,7 +56,7 @@ var refreshSizeTime;
 
 function refreshSize() {
     clearTimeout(refreshSizeTime);
-    refreshSizeTime = setTimeout(_refreshSize, 400);
+    refreshSizeTime = setTimeout(_refreshSize, 200);
 }
 
 function _refreshSize() {
@@ -122,7 +122,7 @@ function gameRestart() {
     _gameScore = 0;
     _gameOver = false;
     _gameStart = false;
-    _gameTimeNum = 20;
+    _gameTimeNum = 30;
     GameTimeLayer.innerHTML = creatTimeText(_gameTimeNum);
     countBlockSize();
     refreshGameLayer(GameLayer[0]);
