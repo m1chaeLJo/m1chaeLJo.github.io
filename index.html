@@ -241,42 +241,26 @@
                 </ul>
 
                 <h3>亿些数据</h3>
-                <?php
-
-                header("Content-type: text/html; charset=utf-8");
-
-                error_reporting(E_ALL ^ E_NOTICE);// 显示除去 E_NOTICE 之外的所有错误信息
-                $uid = $_GET["uid"];
-
-                if ($uid != null) {
-                $file_contents = curl_get_https('https://api.bilibili.com/x/relation/stat?vmid=' . $uid);
-                $arr = json_decode($file_contents,true);
-                }
-
-                function curl_get_https($url){
-                $curl = curl_init(); // 启动一个CURL会话
-                curl_setopt($curl, CURLOPT_URL, $url);
-                curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);// TRUE 将curl_exec()获取的信息以字符串返回，而不是直接输出。
-                curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false); // 跳过证书检查
-                $tmpInfo = curl_exec($curl); // 返回api的json对象
-                curl_close($curl);
-                return $tmpInfo; // 返回json对象
-                }
-
-                ?>
                 <ul class="stats-tabs">
                     <li>
-                        <?php echo "粉丝数：" . $arr['data']['follower'];?>
-                        <b>Sasuke</b>
+                        2831
+                        <b>粉丝数</b>
                     </li>
-                    <li>567 <b>Hinata</b></li>
-                    <li>23,456 <b>Naruto</b></li>
-                    <li>3,456 <b>Kiba</b></li>
-                    <li>456 <b>Shikamaru</b></li>
-                    <li>26 <b>Sakura</b></li>
+                    <li>
+                        146.3万
+
+                        <b>播放量</b>
+                    </li>
+                    <li>
+                        10.2万
+
+                        <b>获赞量</b>
+                    </li>
+                    <li>197677156 <b>QQ号</b></li>
+                   
                 </ul>
 
-                <h4>友情连接～</h4>
+                <h4>友情连接</h4>
                 <style>
                     .youlian {
                         text-decoration: none;
@@ -299,16 +283,16 @@
                 </style>
                 <a class="youlian" href="https://steve7811d.github.io/" target="_blank">Steve7811D</a>
                 <h2><font color="#0190F0">⬆点进去能更nb</h2>
-                <h3>感谢你的支持</h3>
-                <h4>一定越来越好</h4>
-                <h5>....................</h5>
-                <h6>.................</h6>
+                <h6>感谢你的支持</h6>
+                <h4></h4>
+                <h5></h5>
+                <h6>另外若有大佬知道如何把b站数据实时放到网页上，请指点指点！</h6>
 
                 <hr>
 
-                <h3>button</h3>
+                <h3>OK兄弟们</h3>
 
-                <a class="button" href="#">This is a button</a>
+                <a class="button" href="https://m1chaeljo.github.io/Eathanz/">好玩的</a>
 
             </div>
 
@@ -322,13 +306,9 @@
 
                 <nav class="pagination add-bottom">
 
-                    <span class="page-numbers prev inactive">上一页</span>
+                    <span href="#" class="page-numbers prev inactive">不存在的上一页</span>
                     <span class="page-numbers current">1</span>
-                    <a href="#" class="page-numbers">2</a>
-                    <a href="#" class="page-numbers">3</a>
-                    <a href="#" class="page-numbers">4</a>
-                    <a href="#" class="page-numbers">5</a>
-                    <a href="#" class="page-numbers next">下一页</a>
+                    <a href="#" class="page-numbers prev inactive">又是不存在的下一页</a>
                 </nav>
             </div>
         </div>
