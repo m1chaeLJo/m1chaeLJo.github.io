@@ -28,18 +28,50 @@ body { background: #0f0f0f; }
 /* b. Header Styles
 /* ------------------------------------------------------------------ */
 
-header {
+.headerF {
    position: relative;
    height: 800px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(../images/header-background.jpg) no-repeat top center;
+   background: #161415 url(../images/bz.jpeg) no-repeat top center;
    background-size: cover !important;
-	-webkit-background-size: cover !important;
+-webkit-background-size: cover !important;
    text-align: center;
    overflow: hidden;
 }
-
+.headerS {
+	position: relative;
+	height: 800px;
+	min-height: 500px;
+	width: 100%;
+	background: #161415 url(../images/bz1.jpeg) no-repeat top center;
+	background-size: cover !important;
+	-webkit-background-size: cover !important;
+	text-align: center;
+	overflow: hidden;
+}
+.headerT {
+	position: relative;
+	height: 800px;
+	min-height: 500px;
+	width: 100%;
+	background: #161415 url(../images/header-background.jpg) no-repeat top center;
+	background-size: cover !important;
+	-webkit-background-size: cover !important;
+	text-align: center;
+	overflow: hidden;
+}
+.headerFo {
+	position: relative;
+	height: 800px;
+	min-height: 500px;
+	width: 100%;
+	background: #161415 url(../images/bz3.jpeg) no-repeat top center;
+	background-size: cover !important;
+	-webkit-background-size: cover !important;
+	text-align: center;
+	overflow: hidden;
+}
 /* vertically center banner section */
 header:before {
    content: '';

@@ -23,8 +23,35 @@
 </head>
 
 <body>
-    <header id="home">
+    <header id="home" class="headerF">
 
+        <script>document.getElementById("home").setAttribute("class", "headerT");
+            var num=0;
+            function bgp() {
+
+                num=num+1;
+                if (num == 0) {
+                    document.getElementById("home").setAttribute("class", "headerT");
+
+                } if (num == 1) {
+
+                    document.getElementById("home").setAttribute("class", "headerF");
+
+                }
+                if (num == 2) {
+                    document.getElementById("home").setAttribute("class", "headerS");
+
+                }
+                if (num == 3) {
+                    document.getElementById("home").setAttribute("class", "headerFo");
+
+                }
+                if (num > 3) {
+                    num = -1;
+                }
+            }
+                //document.getElementsById('home').style.background = pic;
+            </script>
         <nav id="nav-wrap">
 
             <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
@@ -32,7 +59,7 @@
 
             <ul id="nav" class="nav">
                 <li class="current"><a class="smoothscroll" href="#home">主页</a></li>
-                <li><a class="smoothscroll" href="#about">关于我</a></li>
+                <li><a class="smoothscroll" onclick="bgp()">换壁纸哈哈！</a></li>
             </ul> <!-- end #nav -->
 
         </nav> <!-- end #nav-wrap -->
@@ -52,7 +79,7 @@
         </div>
 
         <p class="scrolldown">
-            <a class="smoothscroll" href="#styles"><i class="icon-down-circle"></i></a>
+            <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
         </p>
 
     </header> <!-- Header End -->
@@ -214,16 +241,19 @@
                     <dl class="dictionary-style">
                         <dt><b>让洛伦兹变换可视化，了解相对论</b></dt>
                         <iframe height="310" width="520" src="//player.bilibili.com/player.html?aid=891977594&bvid=BV17P4y1V7BX&cid=450189304&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-                        <h8>看完这个视频，我立马开始研究相对论，最终以一次函数的方式推出来了自己的一个变换式（有洛伦兹变换同样的效果），同时做了个<code>scratch程序</code>来实现相对论可视化</h8><a href="https://www.scratch-cn.cn/project/?comid=61f09fd9fd48eb11648d22b0"><mark>点这里进来康康啊</mark></a>
+                        <h8>看完这个视频，我立马开始研究相对论，最终以一次函数的方式推出来了自己的一个变换式（有洛伦兹变换同样的效果），同时做了个<code>scratch程序</code>来实现相对论可视化</h8>
+                        <a href="https://www.scratch-cn.cn/project/?comid=61f09fd9fd48eb11648d22b0"><mark>点这里进来康康啊</mark></a>
                         <!--<iframe height="310" width="520" src="https://www.scratch-cn.cn/project/?comid=61f09fd9fd48eb11648d22b0" scrolling="no" border="0" frameborder="0">-->
                     </dl>
-                </dl> 
-                <div class="text" style=" text-align:center;"><em>Lake Arrowhead</em><br/>
+                </dl>
+                <div class="text" style=" text-align:center;">
+                    <em>Lake Arrowhead</em><br />
                     <audio controls="controls">
 
                         <source src="LakeArrowhead.mp3" type="audio/mpeg">
-                    </audio></div>
-</div>
+                    </audio>
+                </div>
+            </div>
 
             <div class="four columns add-bottom">
 
@@ -257,7 +287,7 @@
                         <b>获赞量</b>
                     </li>
                     <li>197677156 <b>QQ号</b></li>
-                   
+
                 </ul>
 
                 <h4>友情连接</h4>
@@ -281,7 +311,7 @@
                             border: 0 solid #B7B6E4;
                         }
                 </style>
-                 <font color="#FF0000"><a class="youlian" href="https://steve7811d.github.io/" target="_blank">Steve7811D的博客</a></font> 
+                <font color="#FF0000"><a class="youlian" href="https://steve7811d.github.io/" target="_blank">Steve7811D的博客</a></font>
                 <h2><font color="#0190F0">⬆点进去能更nb</h2>
                 <h6>感谢你的支持</h6>
                 <h4></h4>
